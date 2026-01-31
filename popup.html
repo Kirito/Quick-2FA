@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple TOTP</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <div style="display:flex; align-items:center; gap:4px; margin-bottom:8px;">
+    <select id="profileSelect" style="flex:1;">
+      <option value="">(empty)</option>
+    </select>
+    <button id="renameProfile" class="icon-btn" title="Rename Profile" style="background:none; border:none; cursor:pointer;">
+      <svg width="20" height="20" fill="#92D3CF" viewBox="0 0 24 24">
+        <path d="M14.06 2.94a1.5 1.5 0 0 1 2.12 0l4.88 4.88a1.5 1.5 0 0 1 0 2.12l-10 10a1 1 0 0 1-.39.25l-5 2a1 1 0 0 1-1.25-1.25l2-5a1 1 0 0 1 .25-.39l10-10zM16 5l-1-1-10 10-1 2 2-1 10-10z"/>
+      </svg>
+    </button>
+    <button id="deleteProfile" class="icon-btn" title="Delete Profile" style="background:none; border:none; cursor:pointer;">
+      <svg width="20" height="20" fill="#92D3CF" viewBox="0 0 24 24">
+        <path d="M3 6h18v2H3V6zm2 3h14l-1 12H6L5 9zm5 2v8h2v-8H10zm4 0v8h2v-8h-2z"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="input-row">
+    <input
+      id="secret"
+      type="password"
+      placeholder="2FA Secret Key"
+      maxlength="64"
+      autocomplete="off"
+    />
+    <button id="toggleSecret" class="icon-btn" title="Show / Hide Secret"></button>
+  </div>
+
+  <div class="input-row">
+    <div class="code hidden" id="code" title="Click to copy">------</div>
+    <button id="toggleCode" class="icon-btn" title="Show / Hide Code"></button>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progress"></div>
+  </div>
+  <div class="timer" id="timer">30s</div>
+
+  <input
+    id="profileName"
+    type="text"
+    placeholder="Profile name"
+    autocomplete="off"
+  />
+  <button id="saveProfile">Save 2FA Profile</button>
+
+  <div class="import-export-container" style="display:flex; gap:4px; margin-top:8px;">
+    <button id="importProfiles" style="flex:1;">Import</button>
+    <button id="exportProfiles" style="flex:1;">Export</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

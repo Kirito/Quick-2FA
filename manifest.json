@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "quick 2fa",
+  "version": "1.0",
+  "description": "quick 2fa extension",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["clipboardWrite", "storage"]
+}

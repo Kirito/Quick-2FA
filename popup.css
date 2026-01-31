@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.import-export-container {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.import-export-container button {
+  flex: 1; 
+  padding: 8px;
+  background: #92D3CF;
+  color: #0F1316;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 12px;
+  width: 260px;
+  background: #0F1316;
+  color: #92D3CF;
+}
+
+select {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  background: #0B0F12;
+  color: #92D3CF;
+  border: 1px solid #1e2a2f;
+  border-radius: 6px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.input-row input,
+.input-row .code {
+  flex: 1;
+  padding: 8px;
+  background: #0B0F12;
+  color: #92D3CF;
+  border: 1px solid #1e2a2f;
+  border-radius: 6px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.input-row input::placeholder,
+.input-row .code::placeholder {
+  color: #5fa7a3;
+}
+
+#profileName {
+  width: 100%;
+  padding: 8px;
+  background: #0B0F12;
+  color: #92D3CF;
+  border: 1px solid #1e2a2f;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-family: monospace;
+}
+
+#profileName::placeholder {
+  color: #5fa7a3;
+}
+
+.icon-btn {
+  margin-left: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: block;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+}
+
+.code {
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 3px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.code.hidden {
+  filter: blur(8px);
+}
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #1a2429;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 100%;
+  background: #92D3CF;
+  transition: width 0.3s linear;
+}
+
+.timer {
+  text-align: center;
+  font-size: 12px;
+  margin: 6px 0 10px;
+  color: #7fc5c1;
+}
+
+#profileName {
+  margin-bottom: 6px;
+}
+
+#saveProfile {
+  width: 100%;
+  padding: 8px;
+  background: #92D3CF;
+  color: #0F1316;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
