@@ -4,8 +4,11 @@ Lightweight Chrome / Brave extension for generating TOTP codes from your browser
 designed to be offline, with no accounts and no tracking
 uses **chrome.storage.local** to store data (data doesnt leave your browser)
 
+## Chrome Webstore Installation
+1. visit https://chromewebstore.google.com/detail/quick-2fa/aeglolmgbfbiiifkhbkdolaphaggiank?
+2. click add to chrome / add to brave
 
-## Installation
+## Manual Installation 
 1. clone or download repo
 2. open chrome or brave and head to either `brave://extensions/` or `chrome://extensions`
 3. enable developer mode
